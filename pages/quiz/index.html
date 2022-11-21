@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="../../../song/SongBird/SongBird/assets/icons/icon.svg" type="image/x-icon">
+    <script defer src="scripts/data.js"></script>
+    <script defer src="scripts/data_en.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <title>SongBird</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <object class="logo" data="../../../song/SongBird/SongBird/assets/icons/logo.svg" type="image/svg+xml">
+                Your browser does not supported SVG
+            </object>
+            <h5 class="score">Score: <span class="score-num">0</span></h5>
+        </div>
+        <nav class="nav">
+            <ul class="site-navigation">
+                <li class="navigation-item">Разминка</li>
+                <li class="navigation-item">Воробьиные</li>
+                <li class="navigation-item">Лесные птицы</li>
+                <li class="navigation-item">Певчие птицы</li>
+                <li class="navigation-item">Хищные птицы</li>
+                <li class="navigation-item">Морские птицы</li>
+            </ul>
+        </nav>
+        <section class="task">
+            <img class="img img-question" src="../../../song/SongBird/SongBird/assets/images/bird.jpg" alt="Bird">
+            <div class="player-wrapper">
+                <h3 class="title">----------</h3>
+                <div class="player">
+                    <div class="player-timebar">
+                        <audio class="audio audio-question" src=""></audio>
+                        <div class="player-button-container">
+                            <button class="button player-button player-button-question">
+                                <svg class="player-button-icon play play-question" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#00BC8C">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                        <path d="M2321 5110 c-497 -48 -990 -251 -1376 -565 -114 -92 -294 -274 -384 -387 -229 -287 -417 -675 -495 -1023 -49 -218 -60 -325 -60 -575 0 -250 11 -357 60 -575 79 -355 272 -749 509 -1040 92 -114 274 -294 387 -384 287 -229 675 -417 1023 -495 218 -49 325 -60 575 -60 250 0 357 11 575 60 261 58 603 204 828 353 389 259 688 599 893 1016 125 255 196 484 241 775 24 161 24 539 0 700 -45 291 -116 520 -241 775 -134 272 -283 480 -498 692 -211 209 -404 346 -673 478 -252 124 -486 197 -765 240 -126 19 -468 27 -599 15z m-173 -1608 c45 -22 1290 -799 1316 -821 27 -24 56 -86 56 -121 0 -35 -29 -97 -56 -121 -26 -22 -1271 -799 -1316 -821 -20 -10 -52 -18 -70 -18 -48 0 -109 39 -135 85 l-23 40 0 835 0 835 23 40 c26 46 87 85 135 85 18 0 50 -8 70 -18z"/>
+                                    </g>
+                                </svg>
+                                <svg class="player-button-icon pause pause-question hidden" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#00BC8C">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                        <path d="M2321 5110 c-497 -48 -990 -251 -1376 -565 -114 -92 -294 -274 -384 -387 -229 -287 -417 -675 -495 -1023 -49 -218 -60 -325 -60 -575 0 -250 11 -357 60 -575 79 -355 272 -749 509 -1040 92 -114 274 -294 387 -384 287 -229 675 -417 1023 -495 218 -49 325 -60 575 -60 250 0 357 11 575 60 261 58 603 204 828 353 389 259 688 599 893 1016 125 255 196 484 241 775 24 161 24 539 0 700 -45 291 -116 520 -241 775 -134 272 -283 480 -498 692 -211 209 -404 346 -673 478 -252 124 -486 197 -765 240 -126 19 -468 27 -599 15z m-227 -1650 c66 -25 130 -85 159 -148 22 -47 22 -51 22 -752 l0 -705 -23 -51 c-27 -60 -69 -103 -132 -136 -63 -32 -186 -33 -246 -1 -57 31 -103 78 -130 138 l-24 50 0 708 c0 613 2 713 15 744 60 143 212 208 359 153z m1153 -8 c62 -32 105 -74 133 -129 l25 -48 3 -699 c3 -790 6 -756 -74 -845 -136 -151 -393 -103 -464 87 -19 51 -20 78 -20 751 l0 698 30 60 c32 64 71 100 142 134 57 26 164 22 225 -9z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <input class="slider timebar timebar-question" type="range" min="0" max="1000" step="1" value="0">
+                    </div>
+                    <div class="volume-container">
+                        <button class="button volume-button volume-button-question">
+                            <svg class="volume-button-icon up up-question" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve" fill="#00BC8C">
+                                <g>
+                                    <path d="M0,153v153h102l127.5,127.5v-408L102,153H0z M344.25,229.5c0-45.9-25.5-84.15-63.75-102v204    C318.75,313.65,344.25,275.4,344.25,229.5z M280.5,5.1v53.55C354.45,81.6,408,147.899,408,229.5S354.45,377.4,280.5,400.35V453.9    C382.5,430.949,459,339.15,459,229.5C459,119.85,382.5,28.049,280.5,5.1z"/>
+                                </g>
+                            </svg>
+                            <svg class="volume-button-icon off off-question hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 461.55 461.55" style="enable-background:new 0 0 461.55 461.55;" xml:space="preserve" fill="#00BC8C">
+                                <g>
+                                    <path d="M345.525,229.5c0-45.9-25.5-84.15-63.75-102v56.1l63.75,63.75C345.525,239.7,345.525,234.6,345.525,229.5z M409.275,229.5    c0,22.95-5.1,45.9-12.75,66.3l38.25,38.25c17.85-30.6,25.5-68.85,25.5-107.1c0-109.65-76.5-201.45-178.5-224.4V56.1    C355.725,81.6,409.275,147.9,409.275,229.5z M34.425,0L1.275,33.15L121.125,153H1.275v153h102l127.5,127.5V262.65L340.425,372.3    c-17.851,12.75-35.7,22.95-58.65,30.601v53.55c35.7-7.65,66.3-22.95,94.35-45.9l51,51l33.15-33.149l-229.5-229.5L34.425,0z     M230.775,25.5l-53.55,53.55l53.55,53.55V25.5z"/>
+                                </g>
+                            </svg>
+                        </button>
+                        <input class="slider volume volume-question" type="range" min="0" max="100" step="1" value="100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="answers-section">
+            <div class="answers-wrapper">
+                <ul class="answers">
+                    <li class="answers-list item-1" tabindex="0"></li>
+                    <li class="answers-list item-2" tabindex="0"></li>
+                    <li class="answers-list item-3" tabindex="0"></li>
+                    <li class="answers-list item-4" tabindex="0"></li>
+                    <li class="answers-list item-5" tabindex="0"></li>
+                    <li class="answers-list item-6" tabindex="0"></li>
+                </ul>
+            </div>
+            <div class="answers-wrapper info">
+                <div class="info-top-container info-top-container-answer hidden">
+                    <img class="img img-answer" src="../../../song/SongBird/SongBird/assets/images/bird.jpg" alt="Bird">
+                    <ul class="info-top-list">
+                        <li class="info-title-li"><h4 class="info-title">Птица</h4></li>
+                        <li class="info-title-li"><p class="info-title-en">Bird</p></li>
+                        <li>
+                            <div class="player">
+                                <div class="player-timebar">
+                                    <audio class="audio audio-answer" src=""></audio>
+                                    <div class="player-button-container">
+                                        <button class="button player-button player-button-answer">
+                                            <svg class="player-button-icon play play-answer" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#00BC8C">
+                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                                    <path d="M2321 5110 c-497 -48 -990 -251 -1376 -565 -114 -92 -294 -274 -384 -387 -229 -287 -417 -675 -495 -1023 -49 -218 -60 -325 -60 -575 0 -250 11 -357 60 -575 79 -355 272 -749 509 -1040 92 -114 274 -294 387 -384 287 -229 675 -417 1023 -495 218 -49 325 -60 575 -60 250 0 357 11 575 60 261 58 603 204 828 353 389 259 688 599 893 1016 125 255 196 484 241 775 24 161 24 539 0 700 -45 291 -116 520 -241 775 -134 272 -283 480 -498 692 -211 209 -404 346 -673 478 -252 124 -486 197 -765 240 -126 19 -468 27 -599 15z m-173 -1608 c45 -22 1290 -799 1316 -821 27 -24 56 -86 56 -121 0 -35 -29 -97 -56 -121 -26 -22 -1271 -799 -1316 -821 -20 -10 -52 -18 -70 -18 -48 0 -109 39 -135 85 l-23 40 0 835 0 835 23 40 c26 46 87 85 135 85 18 0 50 -8 70 -18z"/>
+                                                </g>
+                                            </svg>
+                                            <svg class="player-button-icon pause pause-answer hidden" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#00BC8C">
+                                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                                                    <path d="M2321 5110 c-497 -48 -990 -251 -1376 -565 -114 -92 -294 -274 -384 -387 -229 -287 -417 -675 -495 -1023 -49 -218 -60 -325 -60 -575 0 -250 11 -357 60 -575 79 -355 272 -749 509 -1040 92 -114 274 -294 387 -384 287 -229 675 -417 1023 -495 218 -49 325 -60 575 -60 250 0 357 11 575 60 261 58 603 204 828 353 389 259 688 599 893 1016 125 255 196 484 241 775 24 161 24 539 0 700 -45 291 -116 520 -241 775 -134 272 -283 480 -498 692 -211 209 -404 346 -673 478 -252 124 -486 197 -765 240 -126 19 -468 27 -599 15z m-227 -1650 c66 -25 130 -85 159 -148 22 -47 22 -51 22 -752 l0 -705 -23 -51 c-27 -60 -69 -103 -132 -136 -63 -32 -186 -33 -246 -1 -57 31 -103 78 -130 138 l-24 50 0 708 c0 613 2 713 15 744 60 143 212 208 359 153z m1153 -8 c62 -32 105 -74 133 -129 l25 -48 3 -699 c3 -790 6 -756 -74 -845 -136 -151 -393 -103 -464 87 -19 51 -20 78 -20 751 l0 698 30 60 c32 64 71 100 142 134 57 26 164 22 225 -9z"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <input class="slider timebar timebar-answer" type="range" min="0" max="1000" step="1" value="0">
+                                </div>
+                                <div class="volume-container">
+                                    <button class="button volume-button volume-button-answer">
+                                        <svg class="volume-button-icon up up-answer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve" fill="#00BC8C">
+                                            <g>
+                                                <path d="M0,153v153h102l127.5,127.5v-408L102,153H0z M344.25,229.5c0-45.9-25.5-84.15-63.75-102v204    C318.75,313.65,344.25,275.4,344.25,229.5z M280.5,5.1v53.55C354.45,81.6,408,147.899,408,229.5S354.45,377.4,280.5,400.35V453.9    C382.5,430.949,459,339.15,459,229.5C459,119.85,382.5,28.049,280.5,5.1z"/>
+                                            </g>
+                                        </svg>
+                                        <svg class="volume-button-icon off off-answer hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 461.55 461.55" style="enable-background:new 0 0 461.55 461.55;" xml:space="preserve" fill="#00BC8C">
+                                            <g>
+                                                <path d="M345.525,229.5c0-45.9-25.5-84.15-63.75-102v56.1l63.75,63.75C345.525,239.7,345.525,234.6,345.525,229.5z M409.275,229.5    c0,22.95-5.1,45.9-12.75,66.3l38.25,38.25c17.85-30.6,25.5-68.85,25.5-107.1c0-109.65-76.5-201.45-178.5-224.4V56.1    C355.725,81.6,409.275,147.9,409.275,229.5z M34.425,0L1.275,33.15L121.125,153H1.275v153h102l127.5,127.5V262.65L340.425,372.3    c-17.851,12.75-35.7,22.95-58.65,30.601v53.55c35.7-7.65,66.3-22.95,94.35-45.9l51,51l33.15-33.149l-229.5-229.5L34.425,0z     M230.775,25.5l-53.55,53.55l53.55,53.55V25.5z"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <input class="slider volume volume-answer" type="range" min="0" max="100" step="1" value="100">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-description">
+                    <p class="info-description-text ">
+                        Послушайте плеер.<br>
+                        Выберите птицу из списка
+                    </p>
+                </div>
+            </div>
+        </section>
+        <button class="button next" disabled>Next level</button>
+    </main>
+</body>
+</html>
